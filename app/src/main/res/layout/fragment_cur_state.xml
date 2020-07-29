@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackGround">
+
+    <LinearLayout
+        android:id="@+id/cur_state_ll_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:orientation="horizontal"
+        android:background="@color/colorWhite">
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="현재 알람 상황"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorSplash"/>
+    </LinearLayout>
+    <View
+        android:id="@+id/cur_state_top_line"
+        android:layout_below="@id/cur_state_ll_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorWhiteGray"/>
+    <RelativeLayout
+        android:id="@+id/current_map_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/cur_state_top_line"
+        android:layout_marginBottom="69dp"
+        android:background="@color/colorOffGray">
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/current_list_view"
+        android:layout_below="@id/cur_state_top_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="15dp"/>
+
+
+    <ImageButton
+        android:id="@+id/current_btn_set_gps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:src="@drawable/btn_set_gps"
+        android:background="@color/colorFree"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="117dp"
+        android:layout_marginRight="23dp"/>
+
+
+</RelativeLayout>

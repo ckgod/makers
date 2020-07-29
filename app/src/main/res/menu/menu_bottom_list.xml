@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_item_alarm_list"
+        android:icon="@drawable/menu_alarm_list_selector"
+        android:title="@string/menu_alarm_list"
+        android:checked="true"/>
+    <item
+        android:id="@+id/menu_item_find_road"
+        android:icon="@drawable/menu_find_road_selector"
+        android:title="@string/menu_find_road"
+        android:checked="false"
+        android:checkable="false"/>
+    <item
+        android:id="@+id/menu_item_last_bus"
+        android:icon="@drawable/menu_last_but_selector"
+        android:title="@string/menu_last_bus"
+        android:checked="false"
+        />
+    <item
+        android:id="@+id/menu_temp"
+        android:title=""
+        android:checked="false"
+        android:checkable="false"
+        android:enabled="false"
+        />
+</menu>

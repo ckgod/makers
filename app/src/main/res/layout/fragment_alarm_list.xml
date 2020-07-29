@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/alarm_list_background"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackGround">
+
+<LinearLayout
+    android:id="@+id/alarm_list_ll_top_bar"
+    android:layout_width="match_parent"
+    android:layout_height="68dp"
+    android:orientation="horizontal"
+    android:background="@color/colorWhite">
+    <ImageButton
+        android:id="@+id/alarm_list_btn_nv_view"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_menu_filled"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:background="@color/colorFree"
+        android:paddingVertical="22dp"/>
+    <TextView
+        android:layout_gravity="center_vertical"
+        android:gravity="left"
+        android:layout_width="0dp"
+        android:layout_weight="5"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:text="알람 리스트"
+        android:textSize="20dp"
+        android:fontFamily="@font/notosans_bold"
+        android:textStyle="bold"
+        android:textColor="@color/colorSplash"/>
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2">
+        <Button
+            android:id="@+id/alarm_list_btn_modify_complete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="완료"
+            android:textColor="@color/colorSplash"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:background="@color/colorFree"
+            android:layout_gravity="center"
+            android:stateListAnimator="@color/colorNull"
+            android:visibility="gone"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/alarm_list_btn_modify"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_btn_modify"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:background="@color/colorFree"
+                android:paddingVertical="24dp"/>
+            <ImageButton
+                android:id="@+id/alarm_list_btn_add_alarm"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_btn_add_alarm"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:background="@color/colorFree"
+                android:paddingVertical="19dp"/>
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>
+
+<View
+    android:id="@+id/alarm_list_top_line"
+    android:layout_below="@id/alarm_list_ll_top_bar"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/colorWhiteGray"/>
+
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/alarm_list_top_line">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:src="@drawable/background_yellow"/>
+
+        <LinearLayout
+            android:id="@+id/alarm_list_container"
+            android:layout_width="match_parent"
+            android:layout_height="152dp"
+            android:orientation="horizontal">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_weight="66"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/string_info_add_alarm"
+                    android:layout_marginTop="24dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginLeft="10dp"/>
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="150dp"
+                    android:layout_height="4px"
+                    android:background="@color/colorBlack"
+                    app:layout_constraintTop_toBottomOf="@id/textView9"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="37"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/img_phone_person"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/alarm_list_list_view"
+            android:layout_below="@+id/alarm_list_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="69dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+            android:overScrollMode="never"
+            android:divider="@color/colorGray"
+            android:dividerHeight="1px"/>
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>
+
+<ImageView
+    android:id="@+id/alarm_list_none_item_back"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/back_none_alarm"
+    android:layout_below="@id/alarm_list_top_line"
+    android:scaleType="fitCenter"
+    android:adjustViewBounds="true"
+    android:visibility="invisible"/>
+
+
+</RelativeLayout>

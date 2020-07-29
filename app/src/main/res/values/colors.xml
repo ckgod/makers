@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2a6faf</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <!-- common -->
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorGray">#636060</color>
+    <color name="colorFree">#00000000</color>
+    <color name="colorNull">@null</color>
+    <color name="colorBackGround">#f3f3f3</color>
+    <color name="colorSearch">#eeeeef</color>
+    <color name="colorSearchText">#88888c</color>
+
+    <!-- 스플래시 -->
+    <color name="colorSplash">#2a6faf</color>
+    <color name="colorOffGray">#a7a7a7</color>
+    <color name="colorYellow">#fdbe00</color>
+    <color name="colorPressedYellow">#fcce43</color>
+    <color name="colorPressedSplash">#76abb2</color>
+    <color name="colorFontColor">#99ffffff</color>
+
+    <!-- 페이스북 -->
+    <color name="colorFacebook">#3875ea</color>
+    <color name="colorPressedFacebook">#81acf2</color>
+
+    <!-- 버튼 프레스 색들 -->
+    <color name="colorJoinButtonPressed">#2a2124</color>
+    <color name="colorWhiteGray">#e0e0e0</color>
+    <color name="colorRippleEffect">#d1d1d5</color>
+    <color name="colorCompleteRed">#c54755</color>
+    <color name="colorCompleteRedPressed">#d98d98</color>
+    <color name="colorContinueGreen">#68ac74</color>
+    <color name="colorContinueGreenPressed">#a1cdab</color>
+    <color name="colorSlideStop">#f7f6f4</color>
+    <color name="colorSky">#629ebf</color>
+
+    <!-- 오류 -->
+    <color name="colorDanger">#BD4444</color>
+    <color name="colorMedium">#e07037</color>
+
+    <!-- 투명한 activity 만들기 -->
+    <color name="transparent">#00000000</color>
+</resources>

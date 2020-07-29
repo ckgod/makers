@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".src.main.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/main_frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </FrameLayout>
+
+    <View
+        android:id="@+id/main_v_bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorWhiteGray"
+        app:layout_constraintBottom_toTopOf="@+id/main_frame_bottom_nav_bar" />
+
+    <FrameLayout
+        android:id="@+id/main_frame_bottom_nav_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/main_bottom_nav_bar"
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@color/colorWhite"
+            app:labelVisibilityMode="unlabeled"
+            app:itemTextColor="@drawable/menu_text_color"
+            app:itemIconSize="111dp"
+            app:menu="@menu/menu_bottom_list"
+            android:fitsSystemWindows="true"
+            style="@style/BottomNavigationView"/>
+    </FrameLayout>
+
+    <ImageButton
+        android:id="@+id/main_btn_current"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_btn_fab3"
+        android:background="@color/colorFree"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="34.5dp"
+        android:layout_marginEnd="23dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

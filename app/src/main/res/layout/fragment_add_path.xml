@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/add_path_bottom_sheet"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_corners_shape"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+        <LinearLayout
+            android:id="@+id/add_path_ll_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_above="@id/add_path_complete_button"
+            android:layout_alignParentTop="true">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="정류장/역"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorSplash"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginHorizontal="25dp"/>
+                <EditText
+                    android:id="@+id/add_path_search_station"
+                    android:gravity="left"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/colorWhite"
+                    android:textColorHint="@color/colorSearchText"
+                    android:textSize="18dp"
+                    android:textColor="@color/colorSplash"
+                    android:imeOptions="actionSearch"
+                    android:inputType="text"
+                    android:drawableLeft="@drawable/custom_btn_find_img"
+                    android:drawablePadding="5dp"
+                    android:paddingLeft="3dp"
+                    android:paddingTop="3dp"
+                    android:layout_marginHorizontal="25dp"/>
+
+                <ListView
+                    android:id="@+id/add_path_list_station"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@color/colorOffGray"
+                    android:dividerHeight="1dp"
+                    android:layout_marginHorizontal="25dp"/>
+                <View
+                    android:id="@+id/add_path_station_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorOffGray"/>
+                <TextView
+                    android:id="@+id/add_path_tv_bus_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="버스"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorSplash"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginHorizontal="25dp"
+                    android:visibility="invisible"/>
+                <TextView
+                    android:id="@+id/add_path_tv_bus_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:textColor="@color/colorSplash"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:visibility="invisible"/>
+                <View
+                    android:id="@+id/add_path_bus_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorOffGray"
+                    android:visibility="invisible"/>
+                <ListView
+                    android:id="@+id/add_path_list_bus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@color/colorOffGray"
+                    android:dividerHeight="1dp"
+                    android:layout_marginHorizontal="25dp"
+                    android:visibility="invisible"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/add_path_complete_button"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@drawable/custom_yellow_button"
+            android:layout_alignParentBottom="true"
+            android:text="경로 추가"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="@color/colorWhite"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginBottom="20dp"/>
+
+
+
+</RelativeLayout>

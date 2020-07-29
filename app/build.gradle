@@ -1,0 +1,63 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "com.publicTA.template"
+        minSdkVersion 23
+        targetSdkVersion 29
+        versionCode 3
+        versionName "1.0.3"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        //renderscriptSupportModeEnabled true    // Enable RS support
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+
+    // https://github.com/square/retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.6.0'
+
+    // https://github.com/square/okhttp
+    implementation("com.squareup.okhttp3:okhttp:4.0.1")
+
+    // https://github.com/square/retrofit/tree/master/retrofit-converters/gson
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+
+    implementation 'de.hdodenhof:circleimageview:3.0.0'
+
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+
+
+    implementation 'com.github.bumptech.glide:glide:4.11.0' // 글라이드 (이미지)
+
+    implementation 'net.cachapa.expandablelayout:expandablelayout:2.9.2' // 익스펜더블 레이아웃
+    implementation 'com.baoyz.swipemenulistview:library:1.3.0' // 리스트뷰 옆으로 삭제
+
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation "androidx.cardview:cardview:1.0.0"
+    implementation 'com.google.android.material:material:1.1.0'
+
+    implementation 'com.github.mmin18:realtimeblurview:1.2.1' // blur
+
+    implementation 'com.github.rey5137:material:1.2.5'
+    implementation 'com.github.zcweng:switch-button:0.0.3@aar' // 스위치 버튼
+
+    implementation 'com.google.code.gson:gson:2.8.5' // gson shared preference 객체 저장
+    implementation 'com.github.d-max:spots-dialog:1.1@aar' // progress dialog
+
+    implementation fileTree(include: ['*.jar'], dir: 'libs') // 카카오 맵
+    implementation files('libs/libDaumMapAndroid.jar')
+    implementation "androidx.core:core:1.3.0"
+}

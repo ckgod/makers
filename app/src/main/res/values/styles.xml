@@ -1,0 +1,85 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+
+        <!-- colorPrimary is used for the default action bar background -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+
+        <!-- colorPrimaryDark is used for the status bar -->
+        <item name="colorPrimaryDark">@color/colorBlack</item>
+
+        <!-- colorAccent is used as the default value for colorControlActivated
+             which is used to tint widgets -->
+        <item name="colorAccent">@color/colorWhite</item>
+
+        <item name="android:timePickerStyle">@style/TaTimePicker</item>
+    </style>
+
+    <!-- 바텀 네비게이션바 글씨 크기 조정 -->
+    <style name="BottomNavigationView">
+        <item name="itemTextAppearanceActive">@style/TextAppearance.BottomNavigationView.Active</item>
+        <item name="itemTextAppearanceInactive">@style/TextAppearance.BottomNavigationView.Inactive</item>
+    </style>
+
+    <style name="TextAppearance"/>
+    <style name="TextAppearance.BottomNavigationView"/>
+
+    <style name="TextAppearance.BottomNavigationView.Inactive">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="TextAppearance.BottomNavigationView.Active">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+
+    <!-- 바텀 시트 rounded -->
+    <style name="AppModalStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/rounded_corners_shape</item>
+    </style>
+
+    <style name="AppBottomSheetDialogTheme"
+        parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+    </style>
+
+    <style name="BottomSheet" parent="@style/Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/rounded_corners_shape</item>
+    </style>
+
+    <style name="BaseBottomSheetDialog" parent="@style/Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="bottomSheetStyle">@style/BottomSheet</item>
+    </style>
+
+    <style name="BottomSheetDialogTheme" parent="BaseBottomSheetDialog" />
+
+    <!-- editText 스타일 -->
+    <style name="EditTextStyle" parent="Widget.AppCompat.EditText">
+        <item name="android:colorControlNormal">@null</item>
+        <item name="android:colorControlActivated">@color/colorYellow</item>
+        <item name="android:textCursorDrawable">@color/colorYellow</item>
+    </style>
+
+    <!-- spot progress -->
+    <style name="customProgressDialog" parent="android:Theme.DeviceDefault.Dialog">
+        <item name="DialogTitleAppearance">@android:style/TextAppearance.Medium.Inverse</item>
+        <item name="DialogTitleText">로딩중입니다…</item>
+        <item name="android:background">@color/colorBackGround</item>
+        <item name="DialogSpotColor">@color/colorYellow</item>
+        <item name="DialogSpotCount">5</item>
+    </style>
+
+
+    <style name="TaTimePicker" parent="android:Widget.Material.TimePicker">
+        <item name="android:headerBackground">#545454</item>
+        <item name="android:numbersTextColor">@color/colorWhite</item>
+        <item name="android:numbersSelectorColor">@color/colorYellow</item>
+        <item name="android:numbersBackgroundColor">#545454</item>
+        <item name="android:background">#404040</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sound_list">
+        <item>진동</item>
+    </string-array>
+</resources>

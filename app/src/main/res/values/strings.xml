@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">타</string>
+    <string name="loading">로딩중입니다.</string>
+    <string name="network_error">네트워크 연결이 원활하지 않습니다.</string>
+
+    <!-- -->
+    <string name="menu_alarm_list">알람 리스트</string>
+    <string name="menu_find_road">길찾기</string>
+    <string name="menu_last_bus">막차</string>
+    <string name="am">오전</string>
+    <string name="pm">오후</string>
+
+    <string name="path_info">갈아는 다음 대중교통을 설정해주세요</string>
+
+    <string name="cycle_monday">월요일마다</string>
+    <string name="cycle_tuesday">화요일마다</string>
+    <string name="cycle_wednesday">수요일마다</string>
+    <string name="cycle_thursday">목요일마다</string>
+    <string name="cycle_friday">금요일마다</string>
+    <string name="cycle_saturday">토요일마다</string>
+    <string name="cycle_sunday">일요일마다</string>
+
+    <string name="title_path">경로</string>
+    <string name="title_time">시간대</string>
+    <string name="title_date">날짜</string>
+    <string name="title_sound">사운드</string>
+    <string name="title_label">레이블</string>
+    <string name="title_last_bus">막차 리스트에 추가</string>
+    <string name="info_last_bus">막차리스트에 추가 되는 동시에 알람이 활성화됩니다.</string>
+    <string name="info_add_alarm_1"><b>정기적으로 가는</b> 곳의\n알람을 추가해주세요!</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
